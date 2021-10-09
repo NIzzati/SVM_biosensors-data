@@ -2,15 +2,15 @@
 The fabrication parameters and data from cyclic voltammetry (CV) were used to construct a model that recognizes the attributes between different biosensor fabrication methods. 
 
 <h2>Module/library used</h2>
-<li>CARET</li>
+<li>caret</li>
 <li>ggplot2</li>
 <li>GGally</li>
 <li>dplyr</li>
 
 <h2>Data Preprocessing</h2>
-Total data 300
+Total data = 300
 
-Training:Testing 80:20
+Training:Testing = 80:20
 
 Each file consists of 7 columns; 6 predictive variables (Ipc, ΔEp, cycles, scan rate, gluta, GOx), and a target variable (method) which corresponds to the four fabrication methods.For this study, the numerical variables, Ipc, ΔEp, cycles and scan rate were normalized. The categorical variables gluta and GOx were translated into binary numerical data (0=No/Before, 1=Yes/After) using a one-hot encoding technique. The data were also randomized to avoid bias.
 
